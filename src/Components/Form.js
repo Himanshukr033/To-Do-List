@@ -1,19 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Component.css";
-import { hover } from "@testing-library/user-event/dist/hover";
 
 function Form() {
   const [items, setItems] = useState([]);
   const [newWork, setNewWork] = useState("");
-
-  // useEffect(() => {
-  //   const logItems = async () => {
-  //     console.log(items);
-  //   };
-  
-  //   logItems();
-  // }, [items]);
-  
 
   const OnChangeHandler = (event) => {
     setNewWork(event.target.value);
